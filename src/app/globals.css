@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: white;
+}
+
+.btn-color{
+  color:#916D9F
+}
+
+.clr{
+  color:#FF6F61
+}
+
+.notification{
+  color:yellow
+}
+
+.fixed-top {
+  position: initial;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  }
+  .navar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+  }
+
+  .tablerow{
+    transition: background-color 0.3s ease; /* Adjust properties and duration as needed */
+  }
+
+  /* Reset some default styles */
+body, h1, h2, h3, p, table {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style the table container */
+.table-container {
+  margin: 20px;
+}
+
+/* Style the table */
+.fortable {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style table headers */
+.fortable .tableheader {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Style alternating rows */
+.fortable .tablerow:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Style table cells */
+.fortable .tabledata, .fortable .tableheader {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+/* Hover effect on rows */
+.fortable .tablebody .tablerow:hover {
+  background-color: #e0f7fa;
+  transition: background-color 0.3s ease;
+}
+
+.but {
+  display: inline;
+}
+
+  
